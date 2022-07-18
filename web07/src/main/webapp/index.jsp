@@ -66,8 +66,8 @@
 </table>
 <button onclick=" lastPage()">上一页</button><button onclick="nextPage()">下一页</button><br>
 跳转到<input type="text" id="jump"><button onclick="toPage()"> 跳转</button>
-每页显示<select onchange="change(this)">
-    <option value="5" ${pageSize==5?'selected':''}>5</option>
+每页显示<select onchange="change(this)" >
+    <option value="5"  ${pageSize==5?'selected':''}>5</option>
     <option value="10" ${pageSize==10?'selected':''}>10</option>
     <option value="15" ${pageSize==15?'selected':''}>15</option>
     <option value="20" ${pageSize==20?'selected':''}>20</option>
