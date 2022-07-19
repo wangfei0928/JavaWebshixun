@@ -6,20 +6,20 @@
     <script type="application/javascript" src="js/jquery.js"></script>
     <script>
         $(function () {
-            $("btn").click(function () {
+            $("#btn").click(function () {
                 $.ajax({
-                    url:"/ajax01",
+                    url:"${pageContext.servletContext.contextPath}/ajax01",
                     success:function (d) {
                         $("#dd").text(d);
                     }
-                })
-            })
-        })
+                });
+            });
+        });
     </script>
 </head>
 <body>
 <div id="dd">
-    <button id="btn">ajax获取</button> 
+    <button id="btn">ajax获取</button>
 </div>
 </body>
 </html>
